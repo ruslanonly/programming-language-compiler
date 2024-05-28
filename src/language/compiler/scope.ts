@@ -1,6 +1,6 @@
 import {type RuntimeValue} from "../types/values";
-import type {Token} from "@/programmingLang/types/tokens";
-import {LangCompileError} from "@/programmingLang/types/languageError";
+import type {Token} from "@/language/types/tokens";
+import {LangCompileError} from "@/language/types/languageError";
 
 export default class Scope {
     parent?: Scope

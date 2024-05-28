@@ -10,7 +10,7 @@ import {
 } from "../types/astNodes";
 import Scope from "./scope";
 import { makeNull, makeNumber, type NumberValue, type RuntimeValue } from "../types/values";
-import {LangCompileError} from "@/programmingLang/types/languageError";
+import {LangCompileError} from "@/language/types/languageError";
 
 export function evaluate(astNode: Statement, scope: Scope = new Scope()): RuntimeValue {
     switch (astNode.kind) {

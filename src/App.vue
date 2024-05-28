@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import {onMounted, ref} from "vue";
-import {SourceCode} from "@/programmingLang/lexer/sourceCode";
-import {tokenize} from "@/programmingLang/lexer/tokenize";
-import {Parser} from "@/programmingLang/parser/parser";
-import Scope from "@/programmingLang/compiler/scope";
-import {evaluate} from "@/programmingLang/compiler/compiler";
-import {LangCompileError, LangSyntaxError} from "@/programmingLang/types/languageError";
+import {SourceCode} from "@/language/lexer/sourceCode";
+import {tokenize} from "@/language/lexer/tokenize";
+import {Parser} from "@/language/parser/parser";
+import Scope from "@/language/compiler/scope";
+import {evaluate} from "@/language/compiler/compiler";
+import {LangCompileError, LangSyntaxError} from "@/language/types/languageError";
 
 const backdropRef = ref<HTMLDivElement>()
 const highlightRef = ref<HTMLDivElement>()
